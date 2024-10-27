@@ -1,0 +1,290 @@
+/* Estilos generales */
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-image: url("../img/paven.png");
+}
+
+a {
+  color: #529125;
+}
+
+a:hover {
+  color: #285616;
+}
+
+/* Cabecera */
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logotipo {
+  width: 60%;
+  margin: 0 auto;
+}
+
+header #logotipo img {
+  display: block;
+  margin: 0 auto;
+  width: 15%; 
+}
+
+header h1 {
+  text-align: center;
+  font-size: 4vw;
+  color: #70b231;
+  text-shadow: 0 2px 4px #333333;
+}
+
+/* Menú */
+nav {
+  width: 100%;
+  height: 10%;
+  background-color: #333333;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+nav ul li {
+  line-height: 4vh;
+  border-right: 1px solid grey;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+nav ul li:first-child { /*Para Inicio, ya que sino no tendría borde*/
+  border-left: 1px solid grey;
+}
+
+nav ul li a {
+  color: white;
+  display: block;
+  padding: 2% 3%;
+  font-size: 14px;
+}
+
+nav ul li:hover {
+  background-color: #70b231;
+  box-shadow: 0 0 4px grey inset;
+  transition: all 300ms;
+}
+
+/* Contenido */
+#content {
+  width: 80%;
+  min-height: 70vh;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* Barra lateral */
+#aside {
+  width: 18%;
+  margin: 2%;
+  height: 50%;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 2px #ccc;
+  font-family: sans-serif, Arial, Helvetica;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1%;
+}
+
+
+#aside a{
+  margin-top: 2%;
+}
+
+#aside .widget {
+  width: 90%;
+  margin: 2% 0;
+  padding: 4%;
+  font-size: 1rem;
+  border-bottom: 1px dashed #333333;
+}
+#aside .widget a{
+margin-top: 3%;
+}
+#aside .widget #enlaces{
+  margin-top: 0;
+}
+
+#aside .widget:last-child {
+  border-bottom: 1px solid white;
+}
+
+#aside h3 {
+  width: 100%;
+  color: #333333;
+  text-align: center;
+  padding: 1% 0;
+  margin-bottom: 2%;
+  background-color: #f2f3f2;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+}
+#aside .widget a:first-child {
+  margin-top: 10px; 
+}
+/* Botones Barra lateral */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  display: block;
+  border: 1px solid #c9c9c9;
+  box-shadow: 0 0 2px #ccc;
+  padding: 2%;
+  color: gray;
+  transition: all 300ms;
+}
+
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border: 1px solid #70b231;
+  color: black;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+  display: block;
+  border-radius: 4px;
+  width: 45%;
+  background-color: #70b231;
+  border: 2px solid green;
+  cursor: pointer;
+  color: white;
+  padding: 2%;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+  box-shadow: 0 0 2px gray;
+}
+
+/* Formularios Barra lateral */
+#aside div label,
+#aside div input[type="text"],
+#aside div input[type="email"],
+#aside div input[type="password"],
+#aside div a {
+  display: block;
+  width: 95%;
+  margin: 1% auto;
+}
+
+#aside div input[type="button"],
+#aside div input[type="submit"],
+#aside div button {
+  display: block;
+  margin: 2% auto;
+}
+
+#aside input,
+#aside label {
+  display: block;
+  text-align: center;
+}
+
+/* Secciones */
+#sections {
+  flex: 1;
+  margin-right: 2%;
+  margin-top: -2%;
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+#sections .titulo {
+  font-size: 2vw;
+  margin-bottom: 2%;
+  text-align: center;
+  padding: 1% 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#sections section {
+  position: relative;
+  margin-top: 4%;
+  background-color: white;
+  padding: 5%;
+  padding-top: 2%;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 4px #c9c9c9;
+  color: #333333;
+  font-size: 1rem;
+  padding-bottom: 2%;
+}
+
+#sections .articulo {
+  margin: 2% 0;
+}
+
+#sections p {
+  text-align: justify;
+}
+
+
+
+/* Pegatinas */
+#sections .stickerOne{
+  position: absolute;
+  left: 2%;
+  top: -4%;
+  
+}
+
+#sections .stickerTwo{
+  position: absolute;
+  right: 2%;
+  top: -4%;
+}
+
+#sections .stickerTwo {
+  position: absolute;
+  margin-left: 60%;
+}
+
+/* Footer */
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+footer{
+  width: 100%;
+  text-align: center;
+  margin-top: 2%;
+  background-color: #333333;
+  padding: 1% 0;
+  color: white;
+  font-size: 1rem;
+  font-family: sans-serif, Arial, Helvetica;
+  box-shadow: 0 0 2px gray;
+}
